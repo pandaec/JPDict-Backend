@@ -1,0 +1,9 @@
+guide to install mongodb
+https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-18-04
+
+view db status
+sudo systemctl status mongodb
+sudo systemctl stop mongodb
+sudo systemctl start mongodb
+sudo systemctl restart mongodb
+
