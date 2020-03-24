@@ -7,3 +7,28 @@ sudo systemctl stop mongodb
 sudo systemctl start mongodb
 sudo systemctl restart mongodb
 
+
+nginx to node localhost
+reverse proxy
+https://www.digitalocean.com/community/questions/how-to-run-node-js-server-with-nginx
+https://medium.com/@utkarsh_verma/configure-nginx-as-a-web-server-and-reverse-proxy-for-nodejs-application-on-aws-ubuntu-16-04-server-872922e21d38
+
+restart nginx
+https://stackoverflow.com/questions/35868976/nginx-job-for-nginx-service-failed-because-the-control-process-exited
+
+find nginx config file
+nginx -t
+
+https support
+https://certbot.eff.org/
+
+
+lightsail domain
+https://medium.com/@JoshuaTheMiller/creating-a-simple-website-with-a-custom-domain-on-amazon-lightsail-docker-86600f19273
+
+wildcard cert setup
+https://lightsail.aws.amazon.com/ls/docs/en_us/articles/amazon-lightsail-using-lets-encrypt-certificates-with-nginx
+
+
+pm2 using yarn start
+cmd: pm2 start yarn --interpreter bash --name api -- start
