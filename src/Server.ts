@@ -10,9 +10,17 @@ import jwtStrat from './passport';
 // Init express
 const app = express();
 
+const whitelist = ['http://localhost:3000', 'https://api-jpdict.pandaec.dev'];
 const corsOptions = {
-    origin: 'http://localhost:3000',
-};
+    origin: (origin: any, callback: any) => {
+        if (whitelist.indexOf(origin) !== -1) {
+            callback(null, true)
+        } else {
+            callback(new Error('Not allowed by CORS'))
+        }
+    }
+}
+
 
 // Add middleware/settings/routes to express.
 app.use(cors(corsOptions));
