@@ -10,7 +10,7 @@ import jwtStrat from './passport';
 // Init express
 const app = express();
 
-const whitelist = ['http://localhost:3000', 'https://jpdict.netlify.com','https://jpdict.pandaec.dev'];
+const whitelist = ['http://localhost:3000', 'https://jpdict.netlify.app','https://jpdict.pandaec.dev'];
 const corsOptions = {
     origin: (origin: any, callback: any) => {
         if (whitelist.indexOf(origin) !== -1) {
